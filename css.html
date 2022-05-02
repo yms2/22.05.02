@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{margin: 0; padding: 0;}
+   body{padding-left: 200px;}
+   div{margin-top: 30px;
+       width: 100px; height: 100px;
+       border: 1px solid #000;}
+
+    .color1{background-color: #000000;}
+    .color2{background-color: aqua;}
+    .color3{background-color: hsla(207, 0%, 50%, 1);}
+    .color4{background-color: rgba(207, 0, 50, 1);}
+
+    .color5{width: 600px;background: linear-gradient(red,yellow);}
+    .color5-1{width: 600px; background: linear-gradient(to right, red, yellow)}
+    .color5-2{width: 600px; background: linear-gradient(to bottom right, red, yellow)}
+    .color5-3{width: 600px; background: linear-gradient(45deg,red, yellow)}
+    .color5-4{width: 600px; background: linear-gradient(90deg,red, yellow,black)}
+    .color5-5{width: 600px; background: linear-gradient(0deg,red 50%, yellow 70%,black 95%);}
+    .color5-5:hover{width: 600px; background: linear-gradient(180deg,red 50%, yellow 70%,black 95%)}
+
+    .color6{width: 600px; background: radial-gradient(red ,yellow ,green )}
+    .color6-1{width: 600px; height: 600px; background: radial-gradient(red 5%,yellow 15%,green 60%)}
+    .color6-2{width: 600px; height: 600px; background: radial-gradient(closest-side , red ,yellow ,green )}
+    .color6-3{width: 600px; height: 600px; background: radial-gradient(closest-corner , red ,yellow ,green )}
+    .color6-4{width: 600px; height: 600px; background: radial-gradient(circle , red 5%,yellow 15%,green 45%)}
+</style>
+<body>
+    <div class="color1"></div>
+    <div class="color2"></div>
+    <div class="color3"></div>
+    <div class="color4"></div>
+    <div class="color5"></div>
+    <div class="color5-1"></div>
+    <div class="color5-2"></div>
+    <div class="color5-3"></div>
+    <div class="color5-4"></div>
+    <div class="color5-5"></div>
+    <div class="color6"></div>
+    <div class="color6-1"></div>
+    <div class="color6-2"></div>
+    <div class="color6-3"></div>
+    <div class="color6-4"></div>
+</body>
+</html>

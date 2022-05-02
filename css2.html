@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{padding-left: 200px;}
+        div{margin-top: 30px;
+        width: 100px; height: 100px;
+        border: 1px solid #000;}
+        /* 
+        transform : 요소의 형태를 변경함
+        translate([dx],[dy]) : 지정한 크기 만큼 이동 시킴(상대값이다.)
+        scale([ds]) : 지정한 배율 만큼 확대한
+        rotate([deg]) : 지정한 각도만큼 회전 시킴
+        skew([degx],[degy]) : 지정한 경사로 기울림 */
+
+        .box1{}
+            .box1 > div{margin-top: 0px; border:0;background-color: aqua;
+                       transform: translate(0px,0px);
+                       transition: all 0.7s;}
+            .box1:hover > div{
+                transform: translate(500px,500px);
+            }
+            
+
+        .box2{}
+        .box2 > div{border: 0px; margin-top: 0px;background-color: aqua
+            ;transition: all 0.7s;}
+        .box2:hover  > div{border: 0px; margin-top: 0px; background-color: red;}
+
+        .box3{}
+        .box3 > div{border: 0px; margin-top: 0px;transition: all 0.7s;background-color: transparent;
+        /* transform: rotate(0deg);} */
+        /* transform: rotateY(0deg);} */
+        /* transform: rotateX(0deg);} */
+        transform: rotateZ(0deg);}
+
+        .box3:hover  > div{border: 0px; margin-top: 0px;background-color: red;
+        /* transform: rotate(360deg) */
+        /* transform: rotateY(360deg) */
+        /* transform: rotateX(360deg) */
+        transform: rotateZ(360deg)
+        }
+
+        .box4{}
+            .box4 > div{border: 0px; margin-top: 0px;transition: all 0.7s;background-color: transparent;
+                transform: skew(0,0);}
+            .box4:hover  > div{border: 0px; margin-top: 0px;background-color: red;
+                transform: skew(-15deg,0)
+               }
+    </style>
+</head>
+<body>
+    
+ <div class="box1">
+    <div></div>
+</div>
+
+<div class="box2">
+   <div></div>
+</div>
+
+<div class="box3">
+   <div></div>
+</div>
+<div class="box4">
+   <div></div>
+</div>
+</body>
+</html>
